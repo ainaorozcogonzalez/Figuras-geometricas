@@ -40,6 +40,11 @@
             return $this->lado1 + $this->lado2 + $this->lado3;
         }
 
+        // METODO TOSTRING PARA LA DESCRIPCION
+        public function __toString() {
+            return "Tipo figura: $this->tipoFigura, Lados: $this->lado1, $this->lado2, $this->lado3";
+        }
+
         // DESTRUCTOR
         public function __destruct() {
         }
