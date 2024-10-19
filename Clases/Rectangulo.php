@@ -3,6 +3,7 @@
     class Rectangulo extends FiguraGeometrica {
         public $lado2;
 
+        
         // CONSTRUCTOR
         public function __construct($lado1, $lado2) {
             // LLAMAMOS AL CONSTRUCTOR DE LA CLASE BASE
