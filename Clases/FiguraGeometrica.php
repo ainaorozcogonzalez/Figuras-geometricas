@@ -28,6 +28,11 @@
             $this->lado1 = $lado1;
         }
 
+        // METODO PARA CALCULAR EL AREA
+        public function calcularArea() {
+            echo "Este método debe ser sobreescrito por las subclases";
+        }
+
         // DESTRUCTOR
         public function __destruct() {
 
