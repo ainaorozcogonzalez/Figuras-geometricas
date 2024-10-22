@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* OCULTAR EL SCROLL */
+        overflow: hidden;
+}
+
+h1 {
+    color: #333;
+    /* ESPACIO DEBAJO DEL TITULO */
+        margin-bottom: 20px;
+    /* CENTRAR EL TEXTO DEL TITULO */
+        text-align: center;
+}
+
+form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* AUMENTAR EL ANCHO MAXIMO DEL FORMULARIO */
+        max-width: 1000px;
+    /* OCUPAR EL ANCHO DEL CONTENEDOR */
+        width: 100%;
+    /* ALTURA FIJA PARA EL FORMULARIO */
+        height: 400px;
+}
+
+.contenedor-lados {
+    display: flex;
+    /* DISTRIBUIR LOS ELEMENTOS CON ESPACIOS ENTRE ELLOS */
+        justify-content: space-between;
+    /* ESPACIO DEBAJO DEL CONTENEDOR DE LADOS */
+        margin-bottom: 20px;
+    flex-wrap: wrap; 
+}
+
+.lado {
+    display: flex;
+    /* ALINEA LAS ETIQUETAS , INPUTS E IMAGENES VERTICALMENTE */
+        flex-direction: column;
+    /* CENTRAR EL CONTENIDO HORIZONTALMENTE */
+        align-items: center;
+    /* OCUPAR EL MISMO ESPACIO */
+        flex: 1;
+    /* ESPACIO ENTRE COLUMNAS */
+        margin-right: 10px;
+    /* ANCHO MINIMO PARA LOS LADOS */
+        min-width: 120px;
+}
+
+.lado:last-child {
+    /* EVITAR MAGEN EXTRA */
+        margin-right: 0;
+}
+
+.input-pequeno {
+    /* AJUSTAR EL ANCHO PARA LOS INPUTS */
+        width: 80px;
+    /* ESPACIO ENTRE LOS INPUTS */
+        padding: 5px; 
+    /* TAMAÑO DE LA FUNETE */
+        font-size: 14px;
+    /* ESPACIO DEBAJO DEL INPUT */
+        margin-bottom: 10px;
+}
+
+.imagen-lado {
+    /* ANCHO DE LAS IMAGENES */
+        width: 100px;
+    /*ALTURA AUTOMATICA  */
+        height: auto;
+    /* ESPACIO ENTRE INPUT Y IMAGENES */
+        margin-top: 10px;
+}
+
+button {
+    /* COLOR DEL BOTON */
+        background-color: #007BFF;
+    /* COLOR DEL TEXTO DEL BOTON */
+        color: white;
+    /* NO PONER BORDE */
+        border: none;
+    /* CAMBIAR AL PASAR EL MOUSE */
+        cursor: pointer;
+    /* BORDES REDONDEADOS */
+        border-radius: 5px;
+    /* ESPACIO INTERNO */
+        padding: 10px 20px;
+}
+
+button:hover {
+    /* COLOR AL PASAR EL MOUSE */
+        background-color: #0056b3;
+}
+
+.error-message {
+    /* COLOR DEL MENSAJE DE ERROR */
+        color: red;
+    /* ESPACIO SUPERIOR DEL MENSAJ DE ERROR */
+        margin-top: 5px;
+    /* TAMAÑO DE LA FUNETE DEL MENSAJE DE ERRO */
+        font-size: 14px;
+}
+
+.input-error {
+    /* BORDES ROJOS PARA LOS CAMPOS CON ERROR */
+        border: 3px solid red;
+}

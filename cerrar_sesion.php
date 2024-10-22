@@ -1,7 +1,12 @@
 <?php
-session_start();
-session_unset();
-session_destroy();
-header('Location: index.php');
-exit();
+    // INICIAMOS LA SESSION 
+        session_start();
+    // CERRAMOS LA SESSION
+        session_unset();
+    // DESTRUIMOS LA SESSION
+        session_destroy();
+    // REDIRECCIONAMOS AL INDEX.PHP
+        header('Location: index.php');
+    // FINALMENTE, SALIMOS DEL PROGRAMA
+        exit();
 ?>

@@ -1,0 +1,115 @@
+* {
+    /* ASEGURAR QUE EL PADDING Y EL BORDER SE QUEDEN EN EL ANCHO Y ALTO DE LOS ELEMENTOS */
+        box-sizing: border-box;
+    /* ELIMINAMOS EL MARGEN PREDETERMINADO */
+        margin: 0; 
+    /* ELIMINAMOS EL PADDING PREDETERMINADO */
+        padding: 0;
+}
+
+body {
+    /* FUENTE DEL BODY */
+        font-family: Arial, sans-serif;
+    /* FONDO DE LA PÁGINA */
+        background-color: #f4f4f4;
+    /* CENTRAMOS EL CONTENIDO */
+        display: flex;
+    /* CENTRAMOS HORIZONTALMENTE */
+        justify-content: center;
+    /* CENTRAMOS VERTICALMENTE */
+        align-items: center;
+    /* HACEMOS QUE OCUPE EL ALTO TOTAL DE LA VENTANA */
+        height: 100vh;
+    /* QUITAMOS EL SCROLL */
+        overflow: hidden;
+}
+
+.contenedor {
+    /* FONDO DEL CONTENEDOR */
+        background-color: white;
+    /* ESPACIADO INTERNO */
+        padding: 40px;
+    /* BORDES REDONDEADOS */
+        border-radius: 10px;
+    /* SOMBRA DEL CONTENEDOR */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* CENTRAR EL TEXTO */
+        text-align: center;
+}
+
+h1 {
+    /* COLOR DEL TITULO H1 */
+        color: #333;
+    /* ESPACIO DEBAJO DEL TITULO */
+        margin-bottom: 20px;
+}
+
+.figuras {
+    /* ACTIVAR EL FLEXOBX */
+        display: flex;
+    /* PERMITIR QUE LAS FIGURAS SE ENVUELVAN SI HAY POCO ESPACIO */
+        flex-wrap: wrap;
+    /* ESPACIO ENTRE ELEMENTOS */
+        justify-content: space-between;
+}
+
+.figura {
+    flex: 1 0 21%;
+    /* CENTRAR EL TEXTO DE LAS IMAGENES */
+        text-align: center;
+    /* ESPACIO ENTRE FIGURA */
+        margin: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    transition: border-color 0.3s;
+}
+
+label:hover {
+    border-color: #007BFF;
+}
+
+input[type="radio"]:checked + label {
+    border-color: #007BFF;
+}
+
+img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007BFF;
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+}
