@@ -10,26 +10,7 @@ El objetivo principal de este proyecto es proporcionar una interfaz sencilla y e
 
 El proyecto está compuesto por la siguiente estructura de directorios y archivos:
 
-|
-|- Clases
-|---- Circulo.php
-|---- Cuadrado.php
-|---- FiguraGeometrica.php
-|---- Rectangulo.php 
-|---- Triangulo.php 
-|- css 
-|---- styles_formulario.css 
-|---- styles_index.css 
-|---- styles_resultado.css 
-|- images 
-|- Js 
-|---- validacion_index.js 
-|---- validaciones.js 
-|- cerrar_sesion.php 
-|- formulario.php 
-|- index.php 
-|- resultado.php
-
+![estructura](images/estructura.png)
 
 ### Descripción de los Archivos y Directorios
 
