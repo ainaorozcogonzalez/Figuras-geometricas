@@ -26,7 +26,7 @@
     <!-- AÑADIMOS LA IMAGEN DEL ICONO -->
         <link rel="icon" href="./images/cuadrado.png" type="image/x-icon">
     <!-- AÑADIMOS LAS VALIDACIONES JS -->
-        <script src="validaciones.js" defer></script>
+        <script src="./Js/validaciones.js" defer></script>
      <!-- PONEMOS LA LIBRERIA DEL SWEETALERT -->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
